@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 16px;
+}
+#root {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  
+  display: flex;
+  justify-content: center;
+}
+.defaltButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(33, 177, 255);
+  width: 97%;
+  font-size: large;
+  margin: 10px 10px;
+  background: rgb(0, 0, 0,0.85);
+  text-decoration: none;
+  
+  border: none;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  user-select: none;
+  cursor: pointer;
+  max-width: 150px;
+}
+
+
+.defaltInput {
+  margin: 10px 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: large;
+}
+
+.Registration {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  gap: 15px;
+  font-size: large;
+  border: 3px solid rgb(0, 0, 0);
+}
+
+.Registration_body {
+  background: white;
+  padding: 30px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Registration_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: xx-large;
+  border-radius: 5px;
+  font-weight: 900;
+  padding: 10px 10px 30px 10px;
+}
+
+.Registration_name {
+  margin: 10px 5px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: large;
+}
+
+.Registration_password {
+  margin: 10px 5px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: large;
+}
+
+.main {
+  height: 100vh;
+}
+
+.body_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  margin: 50px 0 10px 0;
+  text-transform: uppercase;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  max-width: 1500px;
+  position: relative;
+}
+
+.projectList {
+  width: 1000px;
+  flex: 1 1 auto;
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  gap: 16px;
+}
+.projectList::-webkit-scrollbar {
+  width: 0;
+}
+.project_delete {
+    background: transparent;
+    color: rgb(247, 247, 247);
+    border:none;
+    font-weight: 900;
+    text-shadow: 0 0 5px rgb(255, 86, 86);
+    font-variant: small-caps;
+    font-size: 20px;
+
+  top: 25px;
+  right: 25px;
+  position: absolute;
+}
+
+.project_summary {
+  margin-bottom: 6px;
+
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 16px;
+}
+
+.project_name {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 0px;
+  font-weight: 900;
+  font-size: 20px;
+}
+.project_status {
+  border-bottom: 1px solid white;
+
+  color: white;
+}
+.project_date {
+  border-right: 4px solid white;
+  padding-right: 4px;
+
+  color: white;
+}
+.project_discription {
+  padding: 8px 0px;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: start;
+  font-size: 18px;
+}
+.project_group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  padding: 10px 16px;
+}
+.project_task {
+  padding: 16px 16px;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+.project_block {
+  margin-top: 2px;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.project_task_name {
+  padding: 12px 0px;
+  width: 100%;
+
+  font-size: large;
+  text-transform: uppercase;
+  color: white;
+}
+.project_task_description {
+  padding: 8px 0px;
+  color: white;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+.projectAdd {
+  display: flex;
+  flex-direction: column;
+}
+.projectAdd_input {
+  display: flex;
+  flex-direction: column;
+}
